@@ -1,4 +1,4 @@
-#Basic React Native App
+# Basic React Native App
 
 ## This is an app for me to test out / learn React Native.
 
