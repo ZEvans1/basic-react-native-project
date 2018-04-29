@@ -6,20 +6,15 @@ import {
   StatusBar
 } from 'react-native';
 
-import Login from './src/pages/Login';
+import Logo from '../components/Logo';
 
-type Props = {};
-export default class App extends Component<Props> {
+export default class Login extends Component<{}> {
   render() {
-    return (
+    return(
       <View style={styles.container}>
-      <StatusBar
-        backgroundColor="#101f27"
-        barStyle="light-content"
-        />
-        <Login/>
+        <Logo/>
       </View>
-    );
+    )
   }
 }
 
