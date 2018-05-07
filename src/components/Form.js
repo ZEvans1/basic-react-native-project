@@ -16,9 +16,10 @@ export default class Logo extends Component<{}> {
           placeholder="Email"/>
         <TextInput style={styles.inputBox}
           underlineColorAndroid='rgba(0,0,0,0)'
+          secureTextEntry={true}
           placeholder="Password"/>
 
-        <TouchableOpacity>
+        <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Login</Text>
         </TouchableOpacity>
       </View>
@@ -38,11 +39,21 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255,255,255,0.3)',
     borderRadius: 25,
     paddingHorizontal:16,
+    fontSize: 16,
     marginVertical: 10
+  },
+
+  button: {
+    width: 300,
+    backgroundColor:'#1c313a',
+    borderRadius: 25,
+    marginVertical: 10,
+    paddingVertical: 12
   },
 
   buttonText: {
     fontSize: 16,
-    fontWeight: '500'
+    fontWeight: '500',
+    textAlign: 'center'
   }
 });

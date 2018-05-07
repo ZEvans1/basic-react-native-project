@@ -15,6 +15,9 @@ export default class Login extends Component<{}> {
       <View style={styles.container}>
         <Logo/>
         <Form/>
+        <View>
+        
+        </View>
       </View>
     )
   }
