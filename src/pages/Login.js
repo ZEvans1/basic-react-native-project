@@ -15,8 +15,8 @@ export default class Login extends Component<{}> {
       <View style={styles.container}>
         <Logo/>
         <Form/>
-        <View>
-        
+        <View style={styles.signupText}>
+          <Text>Sign up for an account.</Text>
         </View>
       </View>
     )
@@ -28,6 +28,11 @@ const styles = StyleSheet.create({
     backgroundColor:'#37474f',
     flex: 1,
     alignItems:'center',
+    justifyContent: 'center'
+  },
+  signupText: { 
+    flex: 1,
+    alignItems: 'center',
     justifyContent: 'center'
   }
 });
